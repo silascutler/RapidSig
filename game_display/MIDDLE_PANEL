@@ -1,0 +1,19 @@
+#!/bin/bash
+###################################################################
+#Script Name    :MIDDLE_PANEL                                                                                             
+#Description    :Script executed in MIDDLE panel of RapidSig Display
+#               :interface                                                                         
+#Args           :                                                                                           
+#Author         :Silas Cutler                                                
+#Email          :silas@BlackLab.io                                           
+###################################################################
+
+source ./game_lib.sh
+
+while true
+do
+	xxd $1 | scroll
+	echo "----EOF----"
+    sleep 2
+
+done

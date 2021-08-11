@@ -1,0 +1,19 @@
+#!/bin/bash
+###################################################################
+#Script Name    :LEFT_PANEL                                                                                             
+#Description    :Script executed in LEFT panel of RapidSig Display
+#               :interface                                                                         
+#Args           :                                                                                           
+#Author         :Silas Cutler                                                
+#Email          :silas@BlackLab.io                                           
+###################################################################
+
+
+echo "ID: "$(sha256sum $1 | awk '{ print $1 }' | sed "s/^\(...\).*\(..\)$/\1\2/")
+echo "--"
+echo "\$file: " $(file $1)
+echo "--"
+exiftool $1
+
+
+sleep 100000

@@ -1,0 +1,19 @@
+split -v
+focus right
+split -v
+focus right
+
+screen -t empty  bash
+screen -t LEFT   ./LEFT_PANEL   ../ghidra_zer0_day_tlp_beige.png.exe
+screen -t MIDDLE ./MIDDLE_PANEL ../ghidra_zer0_day_tlp_beige.png.exe
+screen -t RIGHT  ./RIGHT_PANEL  ../ghidra_zer0_day_tlp_beige.png.exe
+
+focus left
+focus left
+select LEFT
+focus right
+select MIDDLE
+focus right
+select RIGHT
+select RIGHT
+
